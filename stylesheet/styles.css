@@ -1,0 +1,49 @@
+@import "intro.css";
+@import "about.css";
+@import "nav.css";
+@import "footer.css";
+@import "project.css";
+@import "form.css";
+@import "test.css";
+
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --containerWidth: 70%;
+}
+
+html {
+	scroll-behavior: smooth;
+    scroll-behavior: smooth 250ms;
+}
+
+body {
+
+    padding-top: 70px;
+    margin: 0 auto;
+}
+
+section{
+    /* border-width: 2px 0 2px 0;
+    border-color: green;
+    border-style: solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section .container{
+    width: var(--containerWidth);
+    max-width: 960px;
+    /* border: 1px solid blue; */
+}
+
+@media screen and (max-width: 630px) {
+    :root{
+        --containerWidth: 90%;
+    }
+}

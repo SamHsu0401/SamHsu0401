@@ -1,0 +1,135 @@
+
+@font-face {
+    font-family: self-quote;
+    src: url(/fonts/BacasimeAntique-Regular.ttf);
+  }
+
+:root{
+    --h1TextSizeAbout: 45px;
+    --titleBoxWidthAbout:40%;
+    --titleMarginAbout: -10px auto 1em auto;
+    --self-intro: 70%;
+    --h3TextSizeAbout: 18px;
+    --imgWidth: 90%; 
+    --skillBoxSize: 8%;
+}
+
+.about {
+    position: relative; /* Required for the pseudo-element */
+    height: 650px;
+  }
+  
+.about::before {
+
+    content: ""; /* Create a pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: url('/images/usc.jpeg'); */
+    /* background-color:rgba(0, 255, 255, 0.927) ; */
+    background-size: cover;
+    opacity: 0.6; 
+}
+  
+.about .container {
+    /* border: 1px solid blue; */
+    position: relative;
+    background-color: #aacdd0;
+    box-shadow: 15px 15px #5c9296;
+    border-radius: 10%;
+    height: 90%;
+    padding: 3% 5%;
+}
+  
+
+
+.about h1, h2, p {
+    font-family: 'Inter',sans-serif;
+}
+
+.about .title h1 {
+    text-align: center;
+    margin: var(--titleMarginAbout);
+    width: var(--titleBoxWidthAbout);
+    font-size: var(--h1TextSizeAbout);
+    color: #000000;
+    background-color: #BCC1BA;
+    box-shadow: 15px 15px #888c86;
+    /* border: 1px solid blue; */
+}
+
+.education .sub-title{
+    line-height: 10px;
+}
+
+.about .self-intro{
+    margin: 0 auto;
+    width: var(--self-intro);
+}
+.about .self-intro p{
+    font-family:'self-quote';
+    font-size: 20px;
+}
+.about .skillset{
+    margin-top: 20px;
+
+}
+.about .skillset h3{
+    margin-top: 5%;
+    font-size: var(--h3TextSizeAbout);
+    text-align: center;
+}
+
+.about .skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.about .skills .skill{
+    text-align: center;
+    justify-content: center;
+    /* border: 1px solid #c30000; */
+    margin: 0px 10px;
+    width: var(--skillBoxSize);
+    
+}
+.about .skills .skill:hover{
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .4);
+}
+
+
+
+
+.about .skills .skill img{
+    width: var(--imgWidth);
+    height: auto;
+}
+
+.about .skills .pandas img{
+    justify-content: start;
+    width: 70px;
+    margin-bottom: 10%;
+}
+
+.about .skills .skill p{
+
+    margin-top: -5px;
+    font-size: 100%;
+}
+
+
+@media screen and (max-width: 740px) {
+    :root{
+        --h1TextSizeAbout: 30px;
+        --titleBoxWidthAbout: 60%;
+        --titleMarginAbout: 2% auto 3% auto;
+        --self-intro: 80%;
+        --h3TextSizeAbout: 16px;
+        --imgWidth: 90%;
+        --skillBoxSize: 10%;
+    }
+}
