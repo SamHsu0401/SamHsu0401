@@ -3,19 +3,34 @@
 
 main {
     padding-top: 100px;
-    margin: 10%;
-    border-color: 1px solid black;
+    margin: 0 15%;
+    border: 1px solid black;
 }
 
+
+
 .img-container {
-    border-color: black;
+    border: 1px solid rgb(212, 12, 12);
+    display: inline-flex;
+    padding: 2% 5%;
+
+
+}
+
+
+.img-container .img-item {
+
+    /* border: 1px solid green; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    margin: 1% 20px;
+
 }
 
-.img-container {
-    width: 100%;
+img {
+
+    width: 15em;
     height: 100%;
+    border-radius: 10%;
 }

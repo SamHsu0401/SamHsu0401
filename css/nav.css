@@ -8,9 +8,10 @@
     top: 0px;
     left: 0;
     width: 100%;
-    padding: px;
+    padding: 1px;
     background-color: #BCC1BA;
     z-index: 100;
+
 }
 
 .navbar .container {
