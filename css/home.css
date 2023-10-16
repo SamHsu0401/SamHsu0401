@@ -1,36 +1,43 @@
 @import "nav.css";
 
-
 main {
     padding-top: 100px;
     margin: 0 15%;
     border: 1px solid black;
 }
 
-
-
 .img-container {
     border: 1px solid rgb(212, 12, 12);
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
+    /* Enable wrapping when the container is too narrow */
+    justify-content: center;
     padding: 2% 5%;
-
-
 }
 
-
 .img-container .img-item {
-
-    /* border: 1px solid green; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex: 0 0 1;
+    /* Adjust the width of each item */
+    max-width: 90%;
+    /* Set maximum width for each item */
+    text-align: center;
     margin: 1% 20px;
-
 }
 
 img {
-
-    width: 15em;
+    width: 100%;
+    max-width: 15em;
+    /* Set a maximum width for the images */
     height: 100%;
     border-radius: 10%;
+}
+
+/* Media query to change layout when the screen width is below a certain size */
+@media (max-width: 768px) {
+    .img-container .img-item {
+        flex: 0 0 1;
+        /* Adjust width for smaller screens */
+        max-width: 90%;
+    }
+
 }
