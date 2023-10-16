@@ -3,11 +3,11 @@
 main {
     padding-top: 100px;
     margin: 0 15%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .img-container {
-    border: 1px solid rgb(212, 12, 12);
+    /* border: 1px solid rgb(212, 12, 12); */
     display: flex;
     flex-wrap: wrap;
     /* Enable wrapping when the container is too narrow */
@@ -46,5 +46,36 @@ img:hover {
         /* Adjust width for smaller screens */
         max-width: 90%;
     }
+}
 
+
+.text-area {
+    /* border: 1px solid rgb(212, 12, 12); */
+    margin-top: 1%;
+}
+
+#brand-title {
+
+    margin: auto;
+    width: 50%;
+    left: 98px;
+    top: 412px;
+    text-align: center;
+
+}
+
+p {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    margin-top: 1%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+
+
+    color: #000000;
 }
