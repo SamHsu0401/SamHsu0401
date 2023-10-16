@@ -3,7 +3,6 @@
 main {
     padding-top: 100px;
     margin: 0 15%;
-    /* border: 1px solid black; */
 }
 
 .img-container {
@@ -50,7 +49,7 @@ img:hover {
 
 
 .text-area {
-    /* border: 1px solid rgb(212, 12, 12); */
+
     margin-top: 1%;
 }
 
@@ -78,4 +77,39 @@ p {
 
 
     color: #000000;
+}
+
+.button {
+    margin: 2% auto;
+    height: 40px;
+    width: 120px;
+    transition: all ease-in-out 250ms;
+}
+
+
+.button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border-radius: 12px;
+
+    color: white;
+    background-color: #2b9800;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all ease-in-out 250ms;
+}
+
+.button:hover {
+
+    transition: all 0.5s ease;
+    width: 150px;
+    /* Adjust the width to your desired expanded size */
+}
+
+.button a:hover {
+    color: rgb(255, 255, 255);
+    transition: all 0.5s ease;
+    text-decoration: none;
 }
