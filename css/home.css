@@ -30,6 +30,13 @@ img {
     /* Set a maximum width for the images */
     height: 100%;
     border-radius: 10%;
+
+}
+
+img:hover {
+    box-shadow: 5px 0 5px #eaeaea;
+    cursor: pointer;
+
 }
 
 /* Media query to change layout when the screen width is below a certain size */
