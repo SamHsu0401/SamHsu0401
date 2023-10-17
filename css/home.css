@@ -1,115 +1,150 @@
+/* Importing external CSS for navigation */
 @import "nav.css";
 
+/* Styles for the main content area */
 main {
     padding-top: 100px;
+    /* Add space at the top of the main content */
     margin: 0 15%;
+    /* Center the content with 15% margin on left and right */
 }
 
+/* Container for images */
 .img-container {
-    /* border: 1px solid rgb(212, 12, 12); */
     display: flex;
+    /* Use flex layout for the container */
     flex-wrap: wrap;
-    /* Enable wrapping when the container is too narrow */
+    /* Allows images to wrap to next line if container width is too small */
     justify-content: center;
+    /* Center-align images horizontally */
     padding: 2% 5%;
+    /* Add padding inside the container */
 }
 
+/* Individual image items inside the container */
 .img-container .img-item {
     flex: 0 0 1;
-    /* Adjust the width of each item */
+    /* Flex sizing */
     max-width: 90%;
-    /* Set maximum width for each item */
+    /* Limit the width of each image item */
     text-align: center;
+    /* Center-align content inside the item */
     margin: 1% 20px;
+    /* Space between each image item */
 }
 
+/* Styles for all images */
 img {
     width: 100%;
+    /* Fill the width of its container */
     max-width: 15em;
-    /* Set a maximum width for the images */
+    /* Limit the maximum width */
     height: 100%;
+    /* Fill the height of its container */
     border-radius: 10%;
-
+    /* Rounded corners for the images */
 }
 
+/* Styles for images on hover */
 img:hover {
     box-shadow: 5px 0 5px #eaeaea;
+    /* Add a shadow effect */
     cursor: pointer;
-
+    /* Change the cursor to a pointer on hover */
 }
 
-/* Media query to change layout when the screen width is below a certain size */
+/* Media query for screens with a maximum width of 768px (e.g., tablets) */
 @media (max-width: 768px) {
     .img-container .img-item {
         flex: 0 0 1;
-        /* Adjust width for smaller screens */
+        /* Adjust flex sizing for smaller screens */
         max-width: 90%;
+        /* Adjust maximum width for smaller screens */
     }
 }
 
-
+/* Container for the text description */
 .text-area {
-
     margin-top: 1%;
+    /* Space above the text container */
 }
 
+/* Brand title inside the text area */
 #brand-title {
-
     margin: auto;
+    /* Center the title horizontally */
     width: 50%;
-    left: 98px;
-    top: 412px;
+    /* Limit the width of the title */
     text-align: center;
-
+    /* Center-align the text */
 }
 
+/* Paragraph styles */
 p {
     width: 70%;
+    /* Limit the width of the paragraph */
     margin: auto;
+    /* Center the paragraph horizontally */
     text-align: center;
-    margin-top: 1%;
-
+    /* Center-align the text */
     font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
+    /* Set the font */
     font-size: 20px;
+    /* Set the font size */
     line-height: 30px;
-
-
+    /* Set the line height (space between lines) */
     color: #000000;
+    /* Set the font color */
 }
 
+/* Button container */
 .button {
     margin: 2% auto;
+    /* Center the button vertically with 2% margin at the top and bottom */
     height: 40px;
+    /* Set button height */
     width: 120px;
+    /* Set button width */
     transition: all ease-in-out 250ms;
+    /* Transition for hover effects */
 }
 
-
+/* Styles for the anchor inside the button */
 .button a {
     display: flex;
+    /* Use flex layout to center content inside the button */
     justify-content: center;
+    /* Center-align content horizontally */
     align-items: center;
+    /* Center-align content vertically */
     height: 30px;
+    /* Set height of the anchor */
     border-radius: 12px;
-
+    /* Rounded corners */
     color: white;
+    /* Text color */
     background-color: #2b9800;
+    /* Background color of the button */
     font-weight: 700;
+    /* Set font weight */
     text-decoration: none;
+    /* Remove any underline from the anchor */
     transition: all ease-in-out 250ms;
+    /* Transition for hover effects */
 }
 
+/* Hover effects for the button */
 .button:hover {
-
-    transition: all 0.5s ease;
     width: 150px;
-    /* Adjust the width to your desired expanded size */
+    /* Expand button width on hover */
+    transition: all 0.5s ease;
+    /* Transition effect for the hover state */
 }
 
+/* Hover effects for the anchor inside the button */
 .button a:hover {
-    color: rgb(255, 255, 255);
-    transition: all 0.5s ease;
     text-decoration: none;
+    /* Ensure no underline on hover */
+    transition: all 0.5s ease;
+    /* Transition effect for the hover state */
 }
