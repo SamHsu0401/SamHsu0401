@@ -1,1 +1,101 @@
-@import "nav.css"
+@import "nav.css";
+
+:root {
+    --imgWidth: 80%;
+    --introColumnGap: 5%;
+}
+
+/* Reset some basic styles */
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 80%;
+    margin: 7% auto;
+    padding: 0 15px;
+}
+
+.product {
+    display: grid;
+    grid-template-areas: "block block";
+    grid-template-columns: 1fr 1.5fr;
+    column-gap: var(--introColumnGap);
+
+    padding: 15px;
+
+}
+
+.product-img {
+    /* flex: 1; */
+    /* Take 1 portion of the available space */
+    padding: 15px;
+    /* border: 1px solid #000000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.product-img img {
+    width: var(--imgWidth);
+    border-radius: 12px;
+    /* border: 1px solid #000000; */
+    /* Adjust these dimensions to get the desired size and aspect ratio */
+
+
+}
+
+.product-content {
+    /* border: 1px solid #000000; */
+    padding: 30px 100px;
+}
+
+.category a {
+    /* category */
+
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 15px;
+    /* identical to box height */
+    text-decoration: none;
+    color: #3B79D7;
+
+}
+
+
+
+.title p {
+    font-size: 28px;
+    margin-top: 10px;
+    margin-bottom: 10%;
+    width: 80%;
+}
+
+.description p {
+    margin-bottom: 32%;
+    width: 80%;
+    font-size: 20px;
+}
+
+.product-content .button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.product-content .button:hover {
+    background-color: #0056b3;
+}
