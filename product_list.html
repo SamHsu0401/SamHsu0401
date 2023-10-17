@@ -3,18 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="css/home.css"/>
+    <title>Product List Page</title>
+    <link rel="stylesheet" href="css/product_list.css"/>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VMX6TBNLRZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-VMX6TBNLRZ');
-</script>
 
 <body>
     <!-- navbar -->
@@ -24,7 +15,7 @@
             <div class="container">
                 <div class="nav-block icons">
                     <div class="icon">
-                        <a href="#index">
+                        <a href="index.html">
                             <img src="https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-svg-png-icon-download-28.png" style="width: 50px; height: 50px" alt="Home Page Link"></a>
                         </a>
                     </div>
@@ -42,16 +33,38 @@
     <!-- product.html -->
     <main>
         <div class="container">
-            <div class="img-container">
-                <div class="img-item">
-                    <img src="imgs/backpack.jpg" alt="">
+            <div class="products-container">
+
+                <div class="product-item">
+                    <a href="product_page.html"> 
+                        <img src="imgs/backpack.jpg" alt="">
+                    </a>
+                    <div class="product-text"> 
+                        <a class="product-title" href="product_page.html">Product title</a>
+                        <p class="product-price"><b>$35</b></p>
+                    </div>
                 </div>
-                <div class="img-item">
-                    <img src="imgs/bottle.jpg" alt="">
+
+                <div class="product-item">
+                    <a href="product_page.html"> 
+                        <img src="imgs/bottle.jpg" alt="">
+                    </a>
+                    <div class="product-text"> 
+                        <a class="product-title" href="product_page.html">Product title</a>
+                        <p class="product-price"><b>$31.99</b></p>
+                    </div>
                 </div>
-                <div class="img-item">
-                    <img src="imgs/shoes.jpg" alt="">
+
+                <div class="product-item">
+                    <a href="product_page.html"> 
+                        <img src="imgs/shoes.jpg" alt="">
+                    </a>
+                    <div class="product-text"> 
+                        <a class="product-title" href="product_page.html">Product title</a>
+                        <p class="product-price"><b>89.79</b></p>
+                    </div>
                 </div>
+
             </div>
 
             

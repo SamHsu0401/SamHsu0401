@@ -1,0 +1,82 @@
+@import "nav.css";
+
+/* Image and layout */
+/* ------------------ */
+main {
+    padding-top: 100px;
+    margin: 0 15%;
+}
+
+.products-container {
+    /* border: 1px solid rgb(212, 12, 12); */
+    display: flex;
+    flex-wrap: wrap;
+    /* Enable wrapping when the container is too narrow */
+    justify-content: center;
+    padding: 2% 5%;
+}
+
+.products-container .product-item {
+    flex: 0 0 1;
+    /* Adjust the width of each item */
+    max-width: 90%;
+    /* Set maximum width for each item */
+    text-align: center;
+    margin: 1% 20px;
+}
+
+img {
+    width: 100%;
+    max-width: 15em;
+    /* Set a maximum width for the images */
+    height: 100%;
+    border-radius: 10%;
+
+}
+
+img:hover {
+    box-shadow: 5px 0 5px #eaeaea;
+    cursor: pointer;
+
+}
+
+/* Media query to change layout when the screen width is below a certain size */
+@media (max-width: 768px) {
+    .img-container .img-item {
+        flex: 0 0 1;
+        /* Adjust width for smaller screens */
+        max-width: 90%;
+    }
+}
+
+/* Buttons and price */
+/* ------------------ */
+
+.product-text {
+    margin-top: 5%;
+}
+
+.product-title {
+    /* Product Title */
+
+    width: 90px;
+    height: 17px;
+    left: 90px;
+    top: 389px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 15px;
+    text-decoration: none;
+    color: #3B79D7;
+
+
+}
+
+
+
+
+
+/* ------------------ */
