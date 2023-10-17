@@ -99,3 +99,57 @@ p {
 .product-content .button:hover {
     background-color: #0056b3;
 }
+
+/*  */
+/* Generic reset */
+
+
+.info-section h4 {
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 17px;
+
+    color: #000000;
+
+
+}
+
+.info-section {
+    margin-bottom: 20px;
+}
+
+.image-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-col {
+    flex: 1;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.img-col img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Based on a 3 column grid system for large screens, you might want to adjust for medium and small screens if needed */
+@media (max-width: 992px) {
+    .img-col {
+        flex-basis: 50%;
+        /* for 2 columns on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .img-col {
+        flex-basis: 100%;
+        /* for 1 column on small screens */
+    }
+}
