@@ -1,5 +1,8 @@
 /* Importing external CSS for navigation */
 @import "nav.css";
+/* I use a external nav stylesheet for every page, reducing the repetative work of creating nav style */
+
+
 
 /* Styles for the main content area */
 main {
