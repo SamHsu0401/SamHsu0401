@@ -1,0 +1,98 @@
+/* Define a custom CSS variable for color */
+:root {
+    --color: #ffffff83;
+}
+
+/* Style the navigation bar */
+.navbar {
+    position: fixed;
+    /* Fix the navigation bar at the top of the page */
+    top: 0px;
+    left: 0;
+    width: 100%;
+    padding: 1px;
+    background-color: #2b9800;
+    z-index: 100;
+    /* Set a high z-index to ensure it's above other elements */
+}
+
+/* Style the container inside the navigation bar */
+.navbar .container {
+    margin: auto;
+    display: grid;
+    max-width: 960px;
+    grid-template-areas: "icons links";
+    grid-template-columns: 1fr 3fr;
+
+}
+
+/* Style the navigation blocks */
+.nav-block {
+    width: 100%;
+
+}
+
+/* Style the icons section within the navigation */
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+/* Style individual icons */
+.icon {
+    margin: 0 1em;
+}
+
+/* Style images within the navigation */
+nav img {
+    width: 36px;
+    height: 36px;
+}
+
+/* Style the navigation links */
+nav ul {
+    display: flex;
+    justify-content: end;
+    /* Align links to the right */
+    list-style-type: none;
+}
+
+/* Style individual navigation links */
+nav li a {
+    padding: 0 15px;
+    font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-size: 18px;
+    color: #383838;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+}
+
+/* Change link color on hover */
+nav li a:hover {
+    color: rgb(0, 0, 0);
+}
+
+/* Add an underline effect to links */
+li a::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 0.4em;
+    width: 0%;
+    background-color: var(--color);
+    bottom: -1em;
+    transition: all ease-in-out 250ms;
+}
+
+/* Expand the underline effect on hover */
+li a:hover::after {
+    width: 100%;
+}
+
+/* Change link color to the custom variable color on hover */
+li a:hover {
+    color: var(--color);
+}
+
+/* Media query for screens with a

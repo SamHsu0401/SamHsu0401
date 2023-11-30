@@ -13,12 +13,12 @@ main {
     display: flex;
     flex-wrap: wrap;
     /* Enable wrapping when the container is too narrow */
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 2% 5%;
 }
 
 .products-container .product-item {
-    flex: 0 0 1;
+    flex: 1 1 0;
     /* Adjust the width of each item */
     max-width: 90%;
     /* Set maximum width for each item */
