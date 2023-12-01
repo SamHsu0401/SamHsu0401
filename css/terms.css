@@ -1,0 +1,34 @@
+/* Importing external CSS for navigation and footer */
+@import "nav.css";
+@import "footer.css";
+
+/* Styles for the main content area */
+main {
+    padding-top: 100px;
+    margin: 0 15%;
+}
+
+/* Container for the terms content */
+.terms-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title style */
+.terms-container h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Introduction paragraph style */
+.terms-container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: #555;
+}

@@ -1,5 +1,6 @@
 /* Importing external CSS for navigation */
 @import "nav.css";
+@import "footer.css";
 /* I use a external nav stylesheet for every page, reducing the repetative work of creating nav style */
 
 

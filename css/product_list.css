@@ -1,11 +1,12 @@
 @import "nav.css";
+@import "footer.css";
 
 /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
 /* Image and layout */
 /* ------------------ */
 main {
     padding-top: 100px;
-    margin: 0 15%;
+    margin: 0 15% 10%;
 }
 
 .products-container {

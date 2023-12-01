@@ -72,7 +72,7 @@ nav li a:hover {
 }
 
 /* Add an underline effect to links */
-li a::after {
+nav li a::after {
     content: "";
     position: absolute;
     display: block;
