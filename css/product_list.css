@@ -45,7 +45,7 @@ img:hover {
 /* Media query to change layout when the screen width is below a certain size */
 @media (max-width: 768px) {
     .img-container .img-item {
-        flex: 0 0 1;
+        flex: 0 0 auto;
         /* Adjust width for smaller screens */
         max-width: 90%;
     }
